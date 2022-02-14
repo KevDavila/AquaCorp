@@ -25,7 +25,7 @@ class ContactoController extends Controller
                 'email' => $request->get('email'),
                 'comentario' => $request->get('comentario'), ],
                 function ($message) {
-                        $message->to('kevindavila.developer@gmail.com')
+                        $message->to('sabbathkvlt@gmail.com')
                                 ->subject('Confirmacion de correo');
         });
          
