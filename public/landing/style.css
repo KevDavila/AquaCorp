@@ -17,6 +17,7 @@ Version: - v1.0
 @import url(css/font-awesome.min.css);
 @import url(css/elegant-icon.css);
 /* :: 3.0 Base CSS */
+
 * {
   margin: 0;
   padding: 0; }
@@ -300,6 +301,31 @@ img {
     background-color: transparent;
     box-shadow: none; }
 
+.alazea-btn-cancel {
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  min-width: 150px;
+  height: 46px;
+  color: #ffffff;
+  background-color: #10F86B;
+  border: 2px solid #10F86B;
+  border-radius: 2px;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 42px;
+  text-transform: uppercase;
+  font-weight: 600; }
+  .alazea-btn-cancel.active, .alazea-btn-cancel:hover, .alazea-btn-cancel:focus {
+    font-size: 16px;
+    color: #F810E3;
+    border: 2px solid #F810E3;
+    font-weight: 600;
+    background-color: transparent;
+    box-shadow: none; }
+
 /* :: 4.0 Header Area CSS */
 .header-area {
   position: absolute;
@@ -519,7 +545,7 @@ img {
         opacity: 1;
         visibility: visible; }
   .header-area .is-sticky .alazea-main-menu {
-    background-color: #111111;
+    background-color: #298530d1;
     position: fixed;
     width: 100%;
     top: 0;
@@ -1940,7 +1966,7 @@ img {
       color: #ffffff;
       margin-bottom: 13px; }
       .footer-area .single-footer-widget .contact-information p span {
-        color: #b7b7b7; }
+        color: #063970; }
       .footer-area .single-footer-widget .contact-information p:last-child {
         margin-bottom: 0; }
   .footer-area .footer-bottom-area {
@@ -2526,7 +2552,7 @@ img {
   transition-duration: 500ms; }
   .contact-form-area .form-control:focus {
     box-shadow: none;
-    border-color: #10F86B; }
+    border-color: #F810E3; }
 .contact-form-area textarea.form-control {
   height: 80px; }
 

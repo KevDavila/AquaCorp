@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactoController;
+use App\Http\Controllers\SiteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('contenido.contenido');
 });
+Route::get('index', [SiteController::class, 'index'])->name('index');
+Route::post('submit-contacto', [ContactoController::class, 'send_email'])->name('form.post');
